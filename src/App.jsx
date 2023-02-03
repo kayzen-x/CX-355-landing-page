@@ -7,6 +7,7 @@ import Frame1 from './assets/Frame-1.png';
 import Frame2 from './assets/Frame-2.png';
 import Frame3 from './assets/Frame-3.png';
 import Frame4 from './assets/Frame-4.png';
+import ellipse from './assets/ellipse.png';
 
 
 function App() {
@@ -72,34 +73,44 @@ function App() {
         </div>
       </div>
 
-      <div id='our-products' className='mt-12'>
-        <div className='grid grid-cols-3 space-x-8'>
+      <div id='our-products' className='container max-w-full h-80 mt-10'>
+        <h1 className='font-bold text-3xl text-center h-fit pt-10 text-white'>Our Products</h1>
+        <div className='grid grid-cols-3 pt-10 space-x-20 justify-items-center justify-around'>
 
-          <div class="flex justify-center">
-            <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-              <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Unified Sales platform</h5>
-              <p class="text-gray-700 text-base mb-4">
+          <div className="flex justify-center text-center w-48 h-80 ">
+            <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_1'>
+              <div className=' flex flex-row content-center items-center mb-5'>
+                <img src={ellipse} width={20} height={20}></img>
+                <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Unified Sales platform</h5>
+              </div>
+              <strong className="text-gray-700 text-base mb-4 py-12">
                 To increase your sales success rate, we help you create a sales procedure.
-              </p>
+              </strong>
             </div>
           </div>
 
-          <div class="flex justify-center">
-            <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-              <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">All in one suite</h5>
-              <p class="text-gray-700 text-base mb-4">
+          <div className="flex w-44 h-80">
+            <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_2'>
+              <div className='flex flex-row content-center items-center justify-center mb-5'>
+                <img src={ellipse} width={20} height={20}></img>
+                <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2 text-center">All in one suite</h5>
+              </div>
+              <strong className="text-gray-700 text-base mb-4 py-12">
                 We offer you all the tools necessary for the management and growth of your business.
-              </p>
+              </strong>
             </div>
           </div>
 
 
-          <div class="flex justify-center">
-            <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-              <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Help Desk management</h5>
-              <p class="text-gray-700 text-base mb-4">
+          <div className="flex  justify-center w-44 h-80 text-center">
+            <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_3'>
+              <div className='flex flex-row content-center items-center mb-5'>
+                <img src={ellipse}width={20} height={20}></img>
+                <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Help Desk management</h5>
+              </div>
+              <strong className="text-gray-700 text-base mb-4 py-12">
                 We offer you smart automations and prompt customer support with our live chat service.
-              </p>
+              </strong>
             </div>
           </div>
 
