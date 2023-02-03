@@ -8,12 +8,13 @@ import Frame2 from './assets/Frame-2.png';
 import Frame3 from './assets/Frame-3.png';
 import Frame4 from './assets/Frame-4.png';
 import Ellipse from './assets/ellipse.png';
+import CXSocialFooter from './assets/cx-footer-social.png';
 
 
 function App() {
   return (
     <React.Fragment >
-      <div id='hero'>
+      <div className='flex' id='hero'>
         <Navbar />
         <div className=' container grid grid-cols-2 sm:grid grid-row'>
           <div className='container py-5 pl-8' id='hero-main'>
@@ -120,8 +121,8 @@ function App() {
       <div id='contact-us'>
         <div class="container my-24 px-6 mx-auto">
 
-          <section className="mb-32 text-center text-gray-800" id='contact-us-main'>
-            <div className="max-w-[700px] mx-auto px-10 lg:px-6 pt-14">
+          <section className="mb-32 text-center text-gray-800" >
+            <div className="max-w-[700px] mx-auto px-10 lg:px-6 pt-14" id='contact-us-main'>
               <h2 className="text-3xl font-bold mb-12 text-white">Contact us</h2>
               <form>
                 <div className="form-group mb-6">
@@ -139,7 +140,8 @@ function App() {
                     ease-in-out
                     m-0
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-                    placeholder="Full Name" />
+                    placeholder="Full Name" 
+                  />
                 </div>
                 <div className="form-group mb-6">
                   <input type="email" className="form-control block 
@@ -209,6 +211,19 @@ function App() {
 
         </div>
       </div>
+
+      <footer id='footer-bg'>
+        <div className='grid grid-row-4 justify-center  self-center pl-10'>
+          <div>
+            <img src={CXSocialFooter} width={80} height={80} alt="" />
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+
+      </footer>
     </React.Fragment>
   )
 }

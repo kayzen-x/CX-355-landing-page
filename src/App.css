@@ -18,9 +18,16 @@
   position: relative;
 }
 
-#navbar {
-  background-color: #018ABD;
+#hero-main{
   position: relative;
+  /* background-color: aquamarine; */
+  transform: translate(20px, 70px);
+}
+
+#navbar {
+  width: 100%;
+  background-color: #018ABD;
+  position: absolute;
   /* width: 100%; */
 }
 
@@ -48,9 +55,7 @@
   letter-spacing: -0.025em;;
 }
 
-#hero-main{
-  position: relative;
-}
+
 
 #hero-service-girl{
   position: absolute;
@@ -110,7 +115,7 @@
 
 #contact-us{
   width: 100vw;
-  height: 100vh;
+  height: 40em;
 }
 
 #contact-us-main{
@@ -120,4 +125,16 @@
 
 #contact-us-send{
   background-color: #004581;
+}
+
+footer{
+  background-color: #333333;
+  background-image: url('./assets/footer.png');
+  background-size: cover;
+  background-size: 100%, auto;
+  background-repeat: no-repeat;
+  /* width: ; */
+  height: 7em;
+  /* height: 100vh; */
+  display: flex;
 }
