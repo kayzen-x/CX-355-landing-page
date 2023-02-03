@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
+
+#root{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  /* background-color: black; */
+}
+
+#hero{
+  background-image: url("./assets/hero-background.png");
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+
+#navbar {
+  background-color: #018ABD;
+  position: relative;
+  /* width: 100%; */
+}
+
+#signup {
+  color: #018ABD;
+}
+
+#crm-title{
+  font-weight: 700;
+  font-family: Lexend, sans-serif;
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  letter-spacing: 0.05em;
+  word-spacing: 0.08em;
+  background: linear-gradient(95.83deg, #333333 0%, #787575 123.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#mantra{
+  font-size: medium;
+  color: #354763;
+  letter-spacing: -0.025em;;
+}
+
+#hero-main{
+  position: relative;
+}
+
+#hero-service-girl{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#work-with-us{
+  background-image: url('./assets/why-work-background.png');
+  background-size: cover;
+  background-size: 100%, auto;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 30em;
+}
+
+#title-work-with-us{
+  transform: translateY(40px);
+}
+
+#ul-work-with-us{
+  transform: translateY(120px);
+}
+
+
+#crm-help{
+  height: 100%;
+  width: 100vw;
+}
+
+#our-products{
+  width: 100vw;
+  height: 100%;
+  background-image: url('./assets/our-products-bg.png');
+  background-size: 100%;
+  background-color: black;
+}
