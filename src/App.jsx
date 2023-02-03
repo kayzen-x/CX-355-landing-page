@@ -77,7 +77,7 @@ function App() {
         <h1 className='font-bold text-3xl text-center h-fit pt-10 text-white'>Our Products</h1>
         <div className='grid grid-cols-3 pt-10 space-x-20 justify-items-center justify-around'>
 
-          <div className="flex justify-center text-center w-48 h-80 ">
+          <div className="flex justify-center text-center w-48 h-80">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_1'>
               <div className=' flex flex-row content-center items-center mb-5'>
                 <img src={Ellipse} width={20} height={20}></img>
@@ -116,10 +116,101 @@ function App() {
 
         </div>
       </div>
+
+      <div id='contact-us'>
+        <div class="container my-24 px-6 mx-auto">
+
+          <section className="mb-32 text-center text-gray-800" id='contact-us-main'>
+            <div className="max-w-[700px] mx-auto px-10 lg:px-6 pt-14">
+              <h2 className="text-3xl font-bold mb-12 text-white">Contact us</h2>
+              <form>
+                <div className="form-group mb-6">
+                  <input type="text" className="form-control block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+                    placeholder="Full Name" />
+                </div>
+                <div className="form-group mb-6">
+                  <input type="email" className="form-control block 
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div className="form-group mb-6">
+                  <textarea className="
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    id="exampleFormControlTextarea13" rows="3" placeholder="Description">
+                  </textarea>
+                </div>
+
+                <button type="submit" className="
+                  w-full
+                  text-white
+                  px-6
+                  py-2.5
+                  b-blue-600
+                  txt-white
+                  font-medium
+                  text-xs
+                  leading-tight
+                  uppercase
+                  rounded
+                  shadow-md
+                hover:bg-blue-700 hover:shadow-lg
+                focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                active:bg-blue-800 active:shadow-lg
+                  transition
+                  duration-150
+                  ease-in-out"
+                  id='contact-us-send'
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </section>
+
+        </div>
+      </div>
     </React.Fragment>
   )
 }
 
 export default App;
-
-// style={{ backgroundColor: "black" }}

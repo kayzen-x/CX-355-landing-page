@@ -107,3 +107,17 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
                 -20px -20px white;
 }
+
+#contact-us{
+  width: 100vw;
+  height: 100vh;
+}
+
+#contact-us-main{
+  background-color: #018ABD;
+  height: 30em;
+}
+
+#contact-us-send{
+  background-color: #004581;
+}
