@@ -49,13 +49,30 @@
   text-fill-color: transparent;
 }
 
+#crm-help{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100vw;
+}
+
+#crm-help-circle{
+  /* transform: translateX(80px);
+  transform: translateY(-10px); */
+  transform: translate(7em, -10em);
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 #mantra{
   font-size: medium;
   color: #354763;
   letter-spacing: -0.025em;;
 }
-
-
 
 #hero-service-girl{
   position: absolute;
@@ -66,10 +83,10 @@
 #work-with-us{
   background-image: url('./assets/why-work-background.png');
   background-size: cover;
-  background-size: 100%, auto;
+  background-size: 100% 30rem;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 30em;
+  height: 25em;
 }
 
 #title-work-with-us{
@@ -77,13 +94,7 @@
 }
 
 #ul-work-with-us{
-  transform: translateY(120px);
-}
-
-
-#crm-help{
-  height: 100%;
-  width: 100vw;
+  /* transform: translateY(120px); */
 }
 
 #our-products{  
@@ -133,8 +144,20 @@ footer{
   background-size: cover;
   background-size: 100%, auto;
   background-repeat: no-repeat;
-  /* width: ; */
-  height: 7em;
+  width: 100vw;
+  height: 14em;
   /* height: 100vh; */
   display: flex;
+}
+
+#line-span{
+  height: 0.25em;
+  background-color: white;
+  width: 20em;
+}
+
+#copyright{
+  bottom: 0;
+  position: absolute;
+  /* transform: translateX(10em); */
 }

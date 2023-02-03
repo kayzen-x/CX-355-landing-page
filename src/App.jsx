@@ -2,12 +2,16 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Banner from './assets/cx 365.png';
-import customerServiceGirl from './assets/customer-service-girl.png';
+import CustomerServiceGirl from './assets/customer-service-girl.png';
 import Frame1 from './assets/Frame-1.png';
 import Frame2 from './assets/Frame-2.png';
 import Frame3 from './assets/Frame-3.png';
 import Frame4 from './assets/Frame-4.png';
 import Ellipse from './assets/ellipse.png';
+import Circle1 from './assets/circle-1.png';
+import Circle2 from './assets/circle-2.png';
+import Circle3 from './assets/circle-3.png';
+import Circle4 from './assets/circle-4.png';
 import CXSocialFooter from './assets/cx-footer-social.png';
 
 
@@ -36,7 +40,7 @@ function App() {
 
           <div className='align-bottom justify-end object-bottom h-fit' id='hero-service-girl'>
             <img
-              src={customerServiceGirl}
+              src={CustomerServiceGirl}
               alt="customer service girl"
               height={450}
               width={450}
@@ -50,7 +54,7 @@ function App() {
 
       <div id='work-with-us' className='mb-20'>
         <h1 className='text-white font-bold text-center text-4xl' id='title-work-with-us'>Why Work With Us?</h1>
-        <div >
+        <div className='pt-20'>
           <ul className='flex flex-row items-center space-x-8 ml-6' id='ul-work-with-us'>
             <li><img src={Frame1} alt="" width={200} height={200} /></li>
             <li><img src={Frame2} alt="" width={200} height={200} /></li>
@@ -60,17 +64,16 @@ function App() {
         </div>
       </div>
 
-      <div id='crm-help' className='container' >
-        <h1 className='text-xl font-bold text-center mb-10'>Here's how our CRM can help you</h1>
+      <div id='crm-help' className='justify-center self-center text-center' >
+        <h1 className='text-xl font-bold text-center mb-10 '>Here's how our CRM can help you</h1>
+        <img src={Circle4} alt="" id='crm-help-circle' />
 
-        <div className='self-center justify-center justify-self-center flex-row items-center ml-24' > {/*style={{alignContent: 'center', justifyContent: 'center'}}*/}
-          <div>
-            <h1 className='text-white middle none font-bold center py-3 px-6 w-3/4 rounded-lg mb-4 text-center' style={{ backgroundColor: '#018ABD' }}>Increase your lead-to-deal</h1>
-            <h1 className='text-white font-bold py-2 px-4 rounded mb-4 text-center min-w-max w-3/4' style={{ backgroundColor: '#018ABD' }}>Get a 360 degree view of your business</h1>
-            <h1 className='text-white font-bold py-2 px-4 rounded mb-4 text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Get a 360 degree view of your business</h1>
-            <h1 className='text-white font-bold py-2 px-4 rounded mb-4 text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Quickly get to see your next-best actions</h1>
-            <h1 className='text-white font-bold py-2 px-4 rounded text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Take your business with you everywhere you go</h1>
-          </div>
+        <div className='self-center flex flex-col items-center content-evenly'>
+          <h1 className='text-white middle none font-bold center py-3 px-6 w-3/4 rounded-lg mb-4 text-center' style={{ backgroundColor: '#018ABD' }}>Increase your lead-to-deal</h1>
+          <h1 className='text-white font-bold py-2 px-4 rounded mb-4 text-center min-w-max w-3/4' style={{ backgroundColor: '#018ABD' }}>Get a 360 degree view of your business</h1>
+          <h1 className='text-white font-bold py-2 px-4 rounded mb-4 text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Get a 360 degree view of your business</h1>
+          <h1 className='text-white font-bold py-2 px-4 rounded mb-4 text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Quickly get to see your next-best actions</h1>
+          <h1 className='text-white font-bold py-2 px-4 rounded text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Take your business with you everywhere you go</h1>
         </div>
       </div>
 
@@ -140,7 +143,7 @@ function App() {
                     ease-in-out
                     m-0
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
-                    placeholder="Full Name" 
+                    placeholder="Full Name"
                   />
                 </div>
                 <div className="form-group mb-6">
@@ -213,17 +216,46 @@ function App() {
       </div>
 
       <footer id='footer-bg'>
-        <div className='grid grid-row-4 justify-center  self-center pl-10'>
-          <div>
+        <div className='grid grid-cols-4 justify-center self-center space-x-10 sm:space-x-4'>
+
+          <div className='pl-10 self-center'>
             <img src={CXSocialFooter} width={80} height={80} alt="" />
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+
+          <div className='text-white'>
+            <h1 className='font-bold text-lg'>Quick Link</h1>
+            <ul>
+              <li>Home</li>
+              <li>How it works</li>
+              <li>About Us</li>
+              <li>Get Signed Up</li>
+              <li>Login</li>
+            </ul>
+          </div>
+
+          <div className='text-white'>
+            <h1 className='font-bold text-lg text-white'>Support</h1>
+            <ul>
+              <li>FAQs</li>
+              <li>Help</li>
+              <li>Blogs</li>
+            </ul>
+          </div>
+
+          <div className='text-white'>
+            <h1 className='font-bold text-lg text-white'>Connect With Us</h1>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Telegram</li>
+            </ul>
+          </div>
         </div>
 
-
+        {/* <span id='line-span'></span> */}
+        <p className='font-bold text-lg text-white text-center items-center px-40' id='copyright'>Copyright &copy; 2022 CX-365</p>
       </footer>
+
     </React.Fragment>
   )
 }
