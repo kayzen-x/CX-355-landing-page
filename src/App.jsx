@@ -80,7 +80,7 @@ function App() {
           <div className="flex justify-center text-center w-48 h-80 ">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_1'>
               <div className=' flex flex-row content-center items-center mb-5'>
-                <img src={ellipse} width={20} height={20}></img>
+                <img src={Ellipse} width={20} height={20}></img>
                 <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Unified Sales platform</h5>
               </div>
               <strong className="text-gray-700 text-base mb-4 py-12">
@@ -92,7 +92,7 @@ function App() {
           <div className="flex w-44 h-80">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_2'>
               <div className='flex flex-row content-center items-center justify-center mb-5'>
-                <img src={ellipse} width={20} height={20}></img>
+                <img src={Ellipse} width={20} height={20}></img>
                 <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2 text-center">All in one suite</h5>
               </div>
               <strong className="text-gray-700 text-base mb-4 py-12">
@@ -105,7 +105,7 @@ function App() {
           <div className="flex  justify-center w-44 h-80 text-center">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_3'>
               <div className='flex flex-row content-center items-center mb-5'>
-                <img src={Ellipse}width={20} height={20}></img>
+                <img src={Ellipse} width={20} height={20}></img>
                 <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Help Desk management</h5>
               </div>
               <strong className="text-gray-700 text-base mb-4 py-12">

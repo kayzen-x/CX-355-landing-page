@@ -92,12 +92,18 @@
 
 #card_1{
   background-color: #DCECF6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+                -20px -20px white;
 }
 
 #card_2{
   background-color: #DCECF6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+                -20px -20px white;
 }
 
 #card_3{
   background-color: #DCECF6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+                -20px -20px white;
 }
