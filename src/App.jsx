@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import banner from './assets/cx 365.png';
+import Banner from './assets/cx 365.png';
 import customerServiceGirl from './assets/customer-service-girl.png';
 import Frame1 from './assets/Frame-1.png';
 import Frame2 from './assets/Frame-2.png';
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <div className=' container grid grid-cols-2 sm:grid grid-row'>
           <div className='container py-5 pl-8' id='hero-main'>
-            <img src={banner}
+            <img src={Banner}
               height={100}
               width={200}
               style={{ marginBottom: 20, marginTop: 40 }}
