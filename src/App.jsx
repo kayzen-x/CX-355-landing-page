@@ -7,7 +7,7 @@ import Frame1 from './assets/Frame-1.png';
 import Frame2 from './assets/Frame-2.png';
 import Frame3 from './assets/Frame-3.png';
 import Frame4 from './assets/Frame-4.png';
-import ellipse from './assets/ellipse.png';
+import Ellipse from './assets/ellipse.png';
 
 
 function App() {
@@ -105,7 +105,7 @@ function App() {
           <div className="flex  justify-center w-44 h-80 text-center">
             <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_3'>
               <div className='flex flex-row content-center items-center mb-5'>
-                <img src={ellipse}width={20} height={20}></img>
+                <img src={Ellipse}width={20} height={20}></img>
                 <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Help Desk management</h5>
               </div>
               <strong className="text-gray-700 text-base mb-4 py-12">
