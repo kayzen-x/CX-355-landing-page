@@ -84,10 +84,9 @@ function App() {
 
       {/* OUR PRODUCTS */}
       <div id='our-products' className='mt-10 mb-14'>
-        <div />
         <h1 className='font-bold text-3xl text-center pt-28 text-white'>Our Products</h1>
         <div className='mt-16 pt-8'>
-          <div className='grid grid-cols-3 justify-items-center justify-around px-14'>
+          <div className='grid grid-cols-6 justify-items-center justify-around px-14 md:ml-32 space-x-6 gap-6 '>
 
             <div className="flex justify-center text-center w-48 h-80">
               <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_1'>
@@ -101,6 +100,9 @@ function App() {
               </div>
             </div>
 
+            <div className='self-center place-self-auto start'>
+              <img src={Arrow} alt="" />
+            </div>
 
             <div className="flex w-44 h-80">
               <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_2'>
@@ -112,6 +114,10 @@ function App() {
                   We offer you all the tools necessary for the management and growth of your business.
                 </strong>
               </div>
+            </div>
+
+            <div className='self-center'>
+              <img src={Arrow} alt="" />
             </div>
 
             <div className="flex  justify-center w-44 h-80 text-center">
