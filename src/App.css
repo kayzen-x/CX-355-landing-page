@@ -7,7 +7,6 @@
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  /* background-color: black; */
 }
 
 #hero{
@@ -20,7 +19,7 @@
 
 #hero-main{
   position: relative;
-  /* background-color: aquamarine; */
+  background-color: aquamarine;
   transform: translate(20px, 70px);
 }
 
@@ -38,9 +37,9 @@
 #crm-title{
   font-weight: 700;
   font-family: Lexend, sans-serif;
-  font-size: 2.25rem; /* 36px */
-  line-height: 2.5rem; /* 40px */
-  letter-spacing: 0.05em;
+  font-size: 2.9rem; /* 36px */
+  line-height: 2.8rem; /* 40px */
+  letter-spacing: 0.09em;
   word-spacing: 0.08em;
   background: linear-gradient(95.83deg, #333333 0%, #787575 123.43%);
   -webkit-background-clip: text;
@@ -68,25 +67,25 @@
 }
 
 
-#mantra{
+/* #crm-mantra{
   font-size: medium;
   color: #354763;
   letter-spacing: -0.025em;;
-}
+} */
 
 #hero-service-girl{
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* right: 0; */
 }
 
 #work-with-us{
   background-image: url('./assets/why-work-background.png');
-  background-size: cover;
-  background-size: 100% 30rem;
+  position: relative;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 25em;
+  height: 31em;
 }
 
 #title-work-with-us{
@@ -94,16 +93,16 @@
 }
 
 #ul-work-with-us{
-  /* transform: translateY(120px); */
+  /* transform: translateX(70px); */
 }
 
 #our-products{  
   background-image: url('./assets/our-products-bg.png');
   background-size: cover;
-  background-size: 100%, auto;
+  background-size: 100%, 100%;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 30em;
+  height: 40em;
 }
 
 #card_1{
@@ -140,13 +139,12 @@
 
 footer{
   background-color: #333333;
+  position: relative;
   background-image: url('./assets/footer.png');
   background-size: cover;
-  background-size: 100%, auto;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 14em;
-  /* height: 100vh; */
+  height: 18em;
   display: flex;
 }
 
@@ -156,8 +154,17 @@ footer{
   width: 20em;
 }
 
-#copyright{
+#copyright{ 
   bottom: 0;
   position: absolute;
-  /* transform: translateX(10em); */
-}
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+ }
+
+/* @media screen and (min-width: 1024px) {
+  #hero {
+    height: 100vh;
+  }
+} */

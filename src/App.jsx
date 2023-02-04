@@ -18,48 +18,44 @@ import CXSocialFooter from './assets/cx-footer-social.png';
 function App() {
   return (
     <React.Fragment >
-      <div className='flex' id='hero'>
+      <div className="bg-white overflow-hidden relative" id='hero'>
         <Navbar />
-        <div className=' container grid grid-cols-2 sm:grid grid-row'>
-          <div className='container py-5 pl-8' id='hero-main'>
-            <img src={Banner}
-              height={100}
-              width={200}
-              style={{ marginBottom: 20, marginTop: 40 }}
-              alt=""
-            />
-            <h1 className='' id='crm-title' style={{ marginBottom: 20 }}>Multi <br /> Customer Relationship Management </h1>
-            <h2 className='text-xl font-medium' id='mantra' >We are focused on the changing the way <br />people do work</h2>
-            <button
-              className='bg hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
-              style={{ backgroundColor: '#004581', marginTop: 10 }}
-            >
-              Get Started
-            </button>
-          </div>
+        <div className="text-start w-1/2 sm:py-40 px-4 sm:px-6 lg:py-16 lg:px-8 z-20 mt-10 ml-20">
+          <img src={Banner}
+            height={100}
+            width={200}
+            style={{ marginBottom: 20, marginTop: 40 }}
+            alt=""
+          />
+          <h1 className='text' id='crm-title'>Multi <br /> Customer Relationship Management </h1>
 
-          <div className='align-bottom justify-end object-bottom h-fit' id='hero-service-girl'>
-            <img
-              src={CustomerServiceGirl}
-              alt="customer service girl"
-              height={450}
-              width={450}
-              style={{ marginTop: 26 }}
-              className='align-bottom'
-            />
-          </div>
+          <h2 className='text-xl font-medium mt-7 mb-7'>We are focused on the changing the way <br />people do work</h2>
+          <button
+            className='bg hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+            style={{ backgroundColor: '#004581', marginTop: 1 }}
+          >
+            Get Started
+          </button>
 
         </div>
+        <img src={CustomerServiceGirl}
+          className="absolute top-0 right-0 hidden h-full max-w-1/2 lg:block"
+          height={450}
+          // width={490}
+          style={{ marginTop: 140 }}
+          id='' />
       </div>
 
-      <div id='work-with-us' className='mb-20'>
+
+
+      <div id='work-with-us' className='mb-20 '>
         <h1 className='text-white font-bold text-center text-4xl' id='title-work-with-us'>Why Work With Us?</h1>
         <div className='pt-20'>
-          <ul className='flex flex-row items-center space-x-8 ml-6' id='ul-work-with-us'>
-            <li><img src={Frame1} alt="" width={200} height={200} /></li>
-            <li><img src={Frame2} alt="" width={200} height={200} /></li>
-            <li><img src={Frame3} alt="" width={200} height={200} /></li>
-            <li><img src={Frame4} alt="" width={200} height={200} /></li>
+          <ul className='flex flex-row items-center space-x-8 lg:pl-28' id='ul-work-with-us'>
+            <li><img src={Frame1} alt="" width={270} height={270} /></li>
+            <li><img src={Frame2} alt="" width={270} height={270} /></li>
+            <li><img src={Frame3} alt="" width={270} height={270} /></li>
+            <li><img src={Frame4} alt="" width={270} height={250} /></li>
           </ul>
         </div>
       </div>
@@ -77,47 +73,50 @@ function App() {
         </div>
       </div>
 
-      <div id='our-products' className='container max-w-full h-80 mt-10'>
-        <h1 className='font-bold text-3xl text-center h-fit pt-10 text-white'>Our Products</h1>
-        <div className='grid grid-cols-3 pt-10 space-x-20 justify-items-center justify-around'>
+      <div id='our-products' className='mt-10 mb-14'>
+        <div />
+        <h1 className='font-bold text-3xl text-center pt-28 text-white'>Our Products</h1>
+        <div className='mt-16 pt-8'>
+          <div className='grid grid-cols-3 justify-items-center justify-around px-14'>
 
-          <div className="flex justify-center text-center w-48 h-80">
-            <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_1'>
-              <div className=' flex flex-row content-center items-center mb-5'>
-                <img src={Ellipse} width={20} height={20}></img>
-                <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Unified Sales platform</h5>
+            <div className="flex justify-center text-center w-48 h-80">
+              <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_1'>
+                <div className=' flex flex-row content-center items-center mb-5'>
+                  <img src={Ellipse} width={20} height={20}></img>
+                  <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Unified Sales platform</h5>
+                </div>
+                <strong className="text-gray-700 text-base mb-4 py-12">
+                  To increase your sales success rate, we help you create a sales procedure.
+                </strong>
               </div>
-              <strong className="text-gray-700 text-base mb-4 py-12">
-                To increase your sales success rate, we help you create a sales procedure.
-              </strong>
             </div>
-          </div>
 
-          <div className="flex w-44 h-80">
-            <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_2'>
-              <div className='flex flex-row content-center items-center justify-center mb-5'>
-                <img src={Ellipse} width={20} height={20}></img>
-                <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2 text-center">All in one suite</h5>
+            <div className="flex w-44 h-80">
+              <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_2'>
+                <div className='flex flex-row content-center items-center justify-center mb-5'>
+                  <img src={Ellipse} width={20} height={20}></img>
+                  <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2 text-center">All in one suite</h5>
+                </div>
+                <strong className="text-gray-700 text-base mb-4 py-12">
+                  We offer you all the tools necessary for the management and growth of your business.
+                </strong>
               </div>
-              <strong className="text-gray-700 text-base mb-4 py-12">
-                We offer you all the tools necessary for the management and growth of your business.
-              </strong>
             </div>
-          </div>
 
 
-          <div className="flex  justify-center w-44 h-80 text-center">
-            <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_3'>
-              <div className='flex flex-row content-center items-center mb-5'>
-                <img src={Ellipse} width={20} height={20}></img>
-                <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Help Desk management</h5>
+            <div className="flex  justify-center w-44 h-80 text-center">
+              <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_3'>
+                <div className='flex flex-row content-center items-center mb-5'>
+                  <img src={Ellipse} width={20} height={20}></img>
+                  <h5 className="text-gray-900 text-lg leading-tight font-medium mb-2">Help Desk management</h5>
+                </div>
+                <strong className="text-gray-700 text-base mb-4 py-12">
+                  We offer you smart automations and prompt customer support with our live chat service.
+                </strong>
               </div>
-              <strong className="text-gray-700 text-base mb-4 py-12">
-                We offer you smart automations and prompt customer support with our live chat service.
-              </strong>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
 
@@ -215,11 +214,11 @@ function App() {
         </div>
       </div>
 
-      <footer id='footer-bg'>
-        <div className='grid grid-cols-4 justify-center self-center space-x-10 sm:space-x-4'>
+      <footer id='footer-bg' className='justify-center  lg:space-x-10'>
+        <div className='grid grid-cols-4 lg:self-center sm:pt-10'>
 
-          <div className='pl-10 self-center'>
-            <img src={CXSocialFooter} width={80} height={80} alt="" />
+          <div className='pr-28 self-center'>
+            <img src={CXSocialFooter} width={120} height={100} alt="" />
           </div>
 
           <div className='text-white'>
@@ -253,7 +252,7 @@ function App() {
         </div>
 
         {/* <span id='line-span'></span> */}
-        <p className='font-bold text-lg text-white text-center items-center px-40' id='copyright'>Copyright &copy; 2022 CX-365</p>
+        <p className='block font-bold text-lg text-white text-center lg:pl-96 md:pr-96 md:center' id='copyright'>Copyright &copy; 2022 CX-365</p>
       </footer>
 
     </React.Fragment>
