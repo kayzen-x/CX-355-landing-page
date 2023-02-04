@@ -13,11 +13,14 @@ import Circle2 from './assets/circle-2.png';
 import Circle3 from './assets/circle-3.png';
 import Circle4 from './assets/circle-4.png';
 import CXSocialFooter from './assets/cx-footer-social.png';
+import Arrow from './assets/arrow.png';
 
 
 function App() {
   return (
     <React.Fragment >
+
+      {/* HERO */}
       <div className="bg-white overflow-hidden relative" id='hero'>
         <Navbar />
         <div className="text-start w-1/2 sm:py-40 px-4 sm:px-6 lg:py-16 lg:px-8 z-20 mt-10 ml-20">
@@ -45,9 +48,10 @@ function App() {
           style={{ marginTop: 140 }}
           id='' />
       </div>
+       {/* HERO END*/}
 
 
-
+      {/* WORK WITH US */}
       <div id='work-with-us' className='mb-20 '>
         <h1 className='text-white font-bold text-center text-4xl' id='title-work-with-us'>Why Work With Us?</h1>
         <div className='pt-20'>
@@ -59,7 +63,10 @@ function App() {
           </ul>
         </div>
       </div>
+      {/* WORK WITH US END */}
 
+
+      {/* HOW CAN CRM HELP */}
       <div id='crm-help' className='justify-center self-center text-center' >
         <h1 className='text-xl font-bold text-center mb-10 '>Here's how our CRM can help you</h1>
         <img src={Circle4} alt="" id='crm-help-circle' />
@@ -72,7 +79,10 @@ function App() {
           <h1 className='text-white font-bold py-2 px-4 rounded text-center w-3/4' style={{ backgroundColor: '#018ABD' }}>Take your business with you everywhere you go</h1>
         </div>
       </div>
+      {/* HOW CAN CRM HELP END */}
 
+
+      {/* OUR PRODUCTS */}
       <div id='our-products' className='mt-10 mb-14'>
         <div />
         <h1 className='font-bold text-3xl text-center pt-28 text-white'>Our Products</h1>
@@ -91,6 +101,7 @@ function App() {
               </div>
             </div>
 
+
             <div className="flex w-44 h-80">
               <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_2'>
                 <div className='flex flex-row content-center items-center justify-center mb-5'>
@@ -102,7 +113,6 @@ function App() {
                 </strong>
               </div>
             </div>
-
 
             <div className="flex  justify-center w-44 h-80 text-center">
               <div className="block p-6 rounded-lg shadow-lg max-w-sm" id='card_3'>
@@ -119,7 +129,10 @@ function App() {
           </div>
         </div>
       </div>
+      {/* OUR PRODUCTS END*/}
 
+
+      {/* CONTACT US */}
       <div id='contact-us'>
         <div class="container my-24 px-6 mx-auto">
 
@@ -213,7 +226,10 @@ function App() {
 
         </div>
       </div>
+      {/* CONTACT US  END */}
 
+
+      {/* FOOTER */}
       <footer id='footer-bg' className='justify-center  lg:space-x-10'>
         <div className='grid grid-cols-4 lg:self-center sm:pt-10'>
 
@@ -254,6 +270,7 @@ function App() {
         {/* <span id='line-span'></span> */}
         <p className='block font-bold text-lg text-white text-center lg:pl-96 md:pr-96 md:center' id='copyright'>Copyright &copy; 2022 CX-365</p>
       </footer>
+       {/* FOOTER */}
 
     </React.Fragment>
   )
