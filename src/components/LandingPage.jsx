@@ -1,4 +1,5 @@
 import '../App.css';
+import Navbar from './Navbar';
 import Banner from '../assets/cx 365.png';
 import CustomerServiceGirl from '../assets/customer-service-girl.png';
 import Frame1 from '../assets/Frame-1.png';
@@ -16,9 +17,9 @@ import Arrow from '../assets/arrow.png';
 function LandingPage() {
     return (
       <div>
-  
         {/* HERO */}
         <div className="bg-white overflow-hidden relative" id='hero'>
+          <Navbar />
           <div className="text-start w-1/2 sm:py-40 px-4 sm:px-6 lg:py-16 lg:px-8 z-20 mt-10 ml-20">
             <img src={Banner}
               height={100}
